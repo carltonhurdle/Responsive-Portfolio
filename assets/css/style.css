@@ -149,7 +149,7 @@ h3,
 /*main*/
 
 #main-container {
-  padding-top: 130px;
+  margin-top: 130px;
 }
 
 .main-section {
@@ -244,4 +244,85 @@ input[type=submit] {
   cursor: pointer;
   background: #4aaaa5;
   border: 0 none;
+}
+/* ***************** Week 2 Assignment ************************* */
+/*Desktop*/
+@media screen and (max-width: 980px) {
+  #masthead {
+    width: 100%;
+  }
+  #masthead nav {
+    margin-right: 150px;
+  }
+}
+
+.sidebar {
+  padding: 30px;
+  width: 100%;
+  max-width: 270px;
+  float: right;
+  margin-left: 550px;
+  margin-bottom: 20px;
+  background: #fff;
+  border: 1px solid #ddd;
+}
+
+#main-container {
+  width: 100%;
+  max-width: 500px;
+  float: left;
+  margin-left: 150px;
+  position: static;
+  background-color: pink;
+  border: 1px solid #ddd;
+}
+
+
+/*Tablet*/
+@media screen and (max-width: 768px) {
+  #masthead {
+    background: #f2048b;
+    width: 100%;
+    max-width: 768px;
+    clear: both;
+    text-align: center;
+    float: inherit;
+    position: static;
+  }
+  .sidebar {
+   float: right;  
+   width: 100%;
+   margin: auto;
+  /*padding: 30px;
+  width: 100%;
+  max-width: 268px;
+  background: #fff;
+  border: 1px solid #ddd;
+  float: left;
+  clear: both;*/
+}
+
+#main-container {
+  width: 100%;
+  float: left;
+  border: 1px solid #ddd;
+}
+}
+
+/*Phone in Landscape*/
+@media screen and (max-width: 640px) {
+  #masthead {
+    background: #4286f4;
+    position: static;
+    width: 100%;
+  }
+}
+
+.sidebar {
+  padding: 30px;
+  width: 100%;
+  float: inherit;
+  margin-bottom: 1px;
+  background: #fff;
+  border: 1px solid #ddd;
 }
